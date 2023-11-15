@@ -25,3 +25,11 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.mainnav{
+  background-color: red;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
