@@ -1,0 +1,52 @@
+{
+    "tttdata": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "username": "johndoe",
+        "bio": "Software Developer",
+        "followers": 1000,
+        "following": 500,
+        "posts": [
+          {
+            "postno": 1,
+            "title": "My First Post",
+            "description": "This is my first post on the platform.",
+            "publishdate": "2023-11-18",
+            "time": "10:00 AM"
+          },
+          {
+            "postno": 2,
+            "title": "Exciting Updates",
+            "description": "Sharing some exciting updates with my followers.",
+            "publishdate": "2023-11-19",
+            "time": "2:30 PM"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "John Doe",
+        "username": "johndoe",
+        "bio": "Software Developer",
+        "followers": 1000,
+        "following": 500,
+        "posts": [
+          {
+            "postno": 1,
+            "title": "Hello World!",
+            "description": "Just joined this amazing platform. Hello, everyone!",
+            "publishdate": "2023-11-20",
+            "time": "9:00 AM"
+          },
+          {
+            "postno": 2,
+            "title": "Travel Diaries",
+            "description": "Sharing my travel experiences and recommendations.",
+            "publishdate": "2023-11-21",
+            "time": "3:00 PM"
+          }
+        ]
+      }
+    ]
+  }
