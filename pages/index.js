@@ -1,12 +1,6 @@
-import Image from 'next/image';
-import Script from 'next/script';
 import Head from 'next/head';
-import { Inter } from 'next/font/google';
-import Navbar from './components/navbar';
-import Profile from './components/profile';
-import Header from './components/header';
 
-const inter = Inter({ subsets: ['latin'] })
+import HomeSection from './components/homesection';
 
 export default function Home() {
   return (
@@ -19,11 +13,8 @@ export default function Home() {
         </Head>
       </div>
       <main style={{backgroundColor:'black'}}>
-        <Header/>
-        <Profile/>
+        <HomeSection/>
       </main>
-
-
     </div>
   )
 }

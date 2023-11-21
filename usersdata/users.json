@@ -1,52 +1,902 @@
-{
-    "tttdata": [
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/1?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
       {
-        "id": 1,
-        "name": "John Doe",
-        "username": "johndoe",
-        "bio": "Software Developer",
-        "followers": 1000,
-        "following": 500,
-        "posts": [
-          {
-            "postno": 1,
-            "title": "My First Post",
-            "description": "This is my first post on the platform.",
-            "publishdate": "2023-11-18",
-            "time": "10:00 AM"
-          },
-          {
-            "postno": 2,
-            "title": "Exciting Updates",
-            "description": "Sharing some exciting updates with my followers.",
-            "publishdate": "2023-11-19",
-            "time": "2:30 PM"
-          }
-        ]
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
       },
       {
-        "id": 2,
-        "name": "John Doe",
-        "username": "johndoe",
-        "bio": "Software Developer",
-        "followers": 1000,
-        "following": 500,
-        "posts": [
-          {
-            "postno": 1,
-            "title": "Hello World!",
-            "description": "Just joined this amazing platform. Hello, everyone!",
-            "publishdate": "2023-11-20",
-            "time": "9:00 AM"
-          },
-          {
-            "postno": 2,
-            "title": "Travel Diaries",
-            "description": "Sharing my travel experiences and recommendations.",
-            "publishdate": "2023-11-21",
-            "time": "3:00 PM"
-          }
-        ]
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Harsh Tripathi",
+    "avatar_url": "https://avatars.githubusercontent.com/u/2?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Harsh diaries!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/4?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/5?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/6?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/7?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/17?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/18?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/19?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/20?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/21?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/22?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/23?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "John Doe",
+    "avatar_url": "https://avatars.githubusercontent.com/u/25?v=4",
+    "username": "johndoe",
+    "bio": "Software Developer",
+    "followers": 1000,
+    "following": 500,
+    "posts": [
+      {
+        "postno": 1,
+        "title": "Hello World!",
+        "description": "Just joined this amazing platform. Hello, everyone!",
+        "publishdate": "2023-11-20",
+        "time": "9:00 AM"
+      },
+      {
+        "postno": 2,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 3,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 4,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 5,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 6,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
+      },
+      {
+        "postno": 7,
+        "title": "Travel Diaries",
+        "description": "Sharing my travel experiences and recommendations.",
+        "publishdate": "2023-11-21",
+        "time": "3:00 PM"
       }
     ]
   }
+]
