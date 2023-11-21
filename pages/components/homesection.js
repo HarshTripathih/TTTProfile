@@ -8,7 +8,7 @@ const HomeSection = () => {
   const [users, setUsers] = useState([]);
 
   const getUsers = async () => {
-    const response = await fetch("http://localhost:3000/api/users");
+    const response = await fetch("https://ttt-profiles.onrender.com/users");
     const data = await response.json();
     setUsers(data);
     // console.log(data[0].posts)

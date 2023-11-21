@@ -16,7 +16,7 @@ const Profile = () => {
   // console.log(id)
 
   const getPosts = async () =>{
-    const response = await fetch("http://localhost:3000/api/users");
+    const response = await fetch("https://ttt-profiles.onrender.com/users");
     const data = await response.json();
     setArticles(data[0].posts);
   }
