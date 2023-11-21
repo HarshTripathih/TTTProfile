@@ -10,17 +10,17 @@ import Head from 'next/head';
 
 const Profile = () => {
   const router = useRouter();
-  const { name, followers, following, pic, id } = router.query;
-
+  const { name, username, followers, following, pic, bio, insta_url, profile_Watch, profile_star, profile_like, profile_favourite,  id} = router.query;
   const [articles,setArticles] = useState([]);
-  // console.log(id)
+  // console.log(bio)
 
   const getPosts = async () =>{
     const response = await fetch("https://ttt-profiles.onrender.com/users");
     const data = await response.json();
     setArticles(data[0].posts);
+    console.log(data);
   }
-  
+
   useEffect(()=>{
     getPosts();
   },[id])
@@ -41,18 +41,18 @@ const Profile = () => {
       <div className='mx-auto w-full h-48'>
         <div className='mx-auto w-full bg-white text-black text-2xl font-bold tracking-tighter font-mono text-center'><h1 className='xs:ml-16'>{name}</h1></div>
         <div className='mx-auto w-full flex justify-center items-center bg-white'>
-          <div className='w-20 p-1 border-2 border-slate-300 rounded-lg text-slate-400 text-2xl font-bold tracking-tighter font-serif text-center xs:ml-16'><h1>{followers}</h1></div>&nbsp;&nbsp;
-          <div className='w-20 p-1 border-2 border-slate-300 rounded-lg text-slate-400 text-2xl font-bold tracking-tighter font-serif text-center'><h1>{following}</h1></div>
+          <div className='w-auto p-1 border-2 border-slate-300 rounded-lg text-slate-400 text-2xl font-bold tracking-tighter font-serif text-center xs:ml-16'><h1>{followers}</h1></div>&nbsp;&nbsp;
+          <div className='w-auto p-1 border-2 border-slate-300 rounded-lg text-slate-400 text-2xl font-bold tracking-tighter font-serif text-center'><h1>{following}</h1></div>
         </div>
         <div className='mx-auto w-full flex justify-center items-center bg-white'>
           <div className='w-20 text-lg tracking-tighter font-thin text-slate-400 text-center xs:ml-16'><span className="inline-block align-top">Followers</span></div>&nbsp;&nbsp;
           <div className='w-20 text-lg tracking-tighter font-thin text-slate-400 text-center'><span className="inline-block align-top">Following</span></div>
         </div>
         <div className='mx-auto p-0 w-full text-2xl font-sans text-black text-center flex justify-center items-center bg-white'>
-          <p className='xs:text-base'>Co-founder & CEO at Terribly Tiny Tales</p>
+          <p className='xs:text-base'>{bio}</p>
         </div>
         <div className='mx-auto p-0 w-full text-xl font-sans text-blue-500 text-center flex justify-center items-center bg-white'>
-          <a className='xs:text-base' href='#'>http://www.instagram.com/anujgosalia</a>
+          <a className='xs:text-base' href='#'>{insta_url}</a>
         </div>
         <div className='mx-auto w-full flex justify-center items-center bg-white'>
           <div className='p-1 bg-blue-500 rounded-2xl'>
@@ -60,26 +60,26 @@ const Profile = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
             </svg>
           </div>&nbsp;&nbsp;&nbsp;
-          <h3 className='text-black font-serif'>125</h3>&nbsp;&nbsp;&nbsp;
+          <h3 className='text-black font-serif'>{profile_star}</h3>&nbsp;&nbsp;&nbsp;
           <div className='p-1 bg-yellow-400 rounded-2xl'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 xs:w-3 xs:h-3">
               <path strokeLinecap="round" strokeLinejoin="round" d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
             </svg>
           </div>&nbsp;&nbsp;&nbsp;
-          <h3 className='text-black font-serif'>125</h3>&nbsp;&nbsp;&nbsp;
+          <h3 className='text-black font-serif'>{profile_like}</h3>&nbsp;&nbsp;&nbsp;
           <div className='p-1 bg-gray-400 rounded-2xl'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 xs:w-3 xs:h-3">
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
               <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
             </svg>
           </div>&nbsp;&nbsp;&nbsp;
-          <h3 className='text-black font-serif'>125</h3>&nbsp;&nbsp;&nbsp;
+          <h3 className='text-black font-serif'>{profile_Watch}</h3>&nbsp;&nbsp;&nbsp;
           <div className='p-1 bg-pink-700 rounded-2xl'>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 xs:w-3 xs:h-3">
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
             </svg>
           </div>&nbsp;&nbsp;&nbsp;
-          <h3 className='text-black font-serif'>125</h3>&nbsp;&nbsp;&nbsp;
+          <h3 className='text-black font-serif'>{profile_favourite}</h3>&nbsp;&nbsp;&nbsp;
         </div>
       </div>
 
@@ -88,7 +88,7 @@ const Profile = () => {
           articles && articles.map((post,index) => (
             <div key={index} class="flex bg-white border-2 shadow-lg rounded-lg mx-4 md:mx-4 my-11 max-w-md md:max-w-2xl ">
               <div class="flex items-start px-4 py-6">
-                <img class="w-12 h-12 rounded-full object-cover mr-4 shadow" src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar" />
+                <img class="w-12 h-12 rounded-full object-cover mr-4 shadow" src={pic} alt="avatar" />
                 <div class="">
                   <div class="flex items-center justify-between">
                     <h2 class="text-lg font-semibold text-gray-900 -mt-1">{post.title}</h2>

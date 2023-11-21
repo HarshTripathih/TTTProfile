@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Header from './header';
-import Profile from './profile';
 import Link from 'next/link';
 
 const HomeSection = () => {
@@ -11,14 +10,15 @@ const HomeSection = () => {
     const response = await fetch("https://ttt-profiles.onrender.com/users");
     const data = await response.json();
     setUsers(data);
-    // console.log(data[0].posts)
+    // console.log(data);
   }
   useEffect(() => {
     getUsers();
   }, [])
+
   return (
-    <div className='overflow-hidden absolute'>
-      <Header />
+    <div className=''>
+      <Header/>
       <div className=' max-auto p-8 bg-slate-50'>
 
         <div className='xs:flex xs:flex-wrap sm:flex sm:flex-wrap grid grid-cols-5 gap-10'>
@@ -27,7 +27,7 @@ const HomeSection = () => {
             users && users.map((value) => (
               <div key={value.id} class="max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-lg hover:shadow-blue-400">
                 <div class="relative">
-                  <Image class="w-full h-48 object-cover" src={value.avatar_url} alt="Profile Image" sizes='100vw' width={0} height={0} />
+                  <a href={`/components/profile?name=${value.name}&followers=${value.followers}&following=${value.following}&pic=${value.avatar_url}&insta_url=${value.insta_url}&bio=${value.bio}&profile_Watch=${value.profile_Watch}&profile_favourite=${value.profile_favourite}&profile_like=${value.profile_like}&profile_star=${value.profile_star}&username=${value.username}`}><Image class="w-full h-48 object-cover" src={value.avatar_url} alt="Profile Image" sizes='100vw' width={0} height={0} /></a>
                 </div>
                 <div class="px-6 py-4">
                   <div class="text-xl font-semibold text-gray-800">{value.name}</div>
@@ -39,7 +39,7 @@ const HomeSection = () => {
                   <span class="inline-block px-2 py-1 font-semibold text-purple-900 bg-purple-200 rounded-full">Design</span>
                 </div>
                 <div class="px-6 py-4">
-                  <a href={`/components/profile?name=${value.name}&followers=${value.followers}&following=${value.following}&pic=${value.avatar_url}&id=${value.id}`} class="text-blue-500 hover:underline">View Profile</a>
+                  <a href={`/components/profile?name=${value.name}&followers=${value.followers}&following=${value.following}&pic=${value.avatar_url}&insta_url=${value.insta_url}&bio=${value.bio}&profile_Watch=${value.profile_Watch}&profile_favourite=${value.profile_favourite}&profile_like=${value.profile_like}&profile_star=${value.profile_star}&username=${value.username}`} class="text-blue-500 hover:underline">View Profile</a>
                 </div>
               </div>
             ))
