@@ -7,7 +7,7 @@ export default function Home() {
     <div>
       <div>
         <Head>
-          <title>Profile</title>
+          <title>Home</title>
           <meta name='description' content='it is a profile page of TTT' />
           <meta name='keywords' content='ttt, tttprofile, tttwebsite' />
         </Head>

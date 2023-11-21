@@ -17,7 +17,7 @@ const HomeSection = () => {
     getUsers();
   }, [])
   return (
-    <>
+    <div className='overflow-hidden absolute'>
       <Header />
       <div className=' max-auto p-8 bg-slate-50'>
 
@@ -47,7 +47,7 @@ const HomeSection = () => {
         </div>
       </div>
 
-    </>
+    </div>
   )
 }
 
