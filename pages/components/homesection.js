@@ -1,15 +1,19 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Header from './header';
+import Spinner from './spinner';
 import Link from 'next/link';
 
 const HomeSection = () => {
   const [users, setUsers] = useState([]);
+  const [loading, setloading] = useState(true);
 
   const getUsers = async () => {
     const response = await fetch("https://ttt-profiles.onrender.com/users");
+    setloading(true);
     const data = await response.json();
     setUsers(data);
+    setloading(false);
     // console.log(data);
   }
   useEffect(() => {
@@ -18,10 +22,10 @@ const HomeSection = () => {
 
   return (
     <div className=''>
-      <Header/>
+      <Header />
       <div className=' max-auto p-8 bg-slate-50'>
-
-        <div className='xs:flex xs:flex-wrap sm:flex sm:flex-wrap grid grid-cols-5 gap-10'>
+        {loading && <Spinner />}
+        <div className='ps:flex ps:flex-wrap xs:flex xs:flex-wrap sm:flex sm:flex-wrap grid grid-cols-5 gap-10'>
 
           {
             users && users.map((value) => (

@@ -25,6 +25,7 @@ module.exports = {
     extend: {
       screens: {
         'xs': {'min':'290px','max':'639px'},
+        'ps': {'min':'220px','max':'638px'},
         // => @media (min-width: 992px) { ... }
       },
       backgroundImage: {

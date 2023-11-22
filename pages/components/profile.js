@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Header from './header'
 import { useRouter } from 'next/router';
+import Spinner from './spinner';
 import Head from 'next/head';
 
 
@@ -10,25 +11,28 @@ import Head from 'next/head';
 
 const Profile = () => {
   const router = useRouter();
-  const { name, username, followers, following, pic, bio, insta_url, profile_Watch, profile_star, profile_like, profile_favourite,  id} = router.query;
-  const [articles,setArticles] = useState([]);
+  const { name, username, followers, following, pic, bio, insta_url, profile_Watch, profile_star, profile_like, profile_favourite, id } = router.query;
+  const [articles, setArticles] = useState([]);
+  const [loading, setloading] = useState(true);
   // console.log(bio)
 
-  const getPosts = async () =>{
+  const getPosts = async () => {
     const response = await fetch("https://ttt-profiles.onrender.com/users");
+    setloading(true);
     const data = await response.json();
     setArticles(data[0].posts);
+    setloading(false);
     console.log(data);
   }
 
-  useEffect(()=>{
+  useEffect(() => {
     getPosts();
-  },[id])
+  }, [id])
 
   return (
     <div className='bg-white'>
       <Header />
-      <div className='md:h-60 sm:h-36 xs:h-36 bg-white' >
+      <div className='md:h-60 md:-mt-2 sm:h-36 sm:-mt-2 xs:h-36 xs:-mt-2 ' >
         <Image src="/coverpage.jpg" width={0}
           height={0}
           sizes="100vw"
@@ -82,10 +86,10 @@ const Profile = () => {
           <h3 className='text-black font-serif'>{profile_favourite}</h3>&nbsp;&nbsp;&nbsp;
         </div>
       </div>
-
+      {loading && <Spinner />}
       <div className='p-2 flex xs:flex-wrap grid md:grid-cols-3 sm:grid-cols-2 gap-3 bg-white'>
         {
-          articles && articles.map((post,index) => (
+          articles && articles.map((post, index) => (
             <div key={index} class="flex bg-white border-2 shadow-lg rounded-lg mx-4 md:mx-4 my-11 max-w-md md:max-w-2xl ">
               <div class="flex items-start px-4 py-6">
                 <img class="w-12 h-12 rounded-full object-cover mr-4 shadow" src={pic} alt="avatar" />
