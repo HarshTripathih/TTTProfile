@@ -1,9 +1,10 @@
-This is a [Live Link](https://ttt-profile-harsh.netlify.app/) project.
+This is a [Live Link](https://ttt-profile-xsdo.vercel.app/) project.
 
 
 ## Getting Started
 I have hosted my project in the Vercel<br>
 This is the [Live link](https://ttt-profile-xsdo.vercel.app/)[https://ttt-profile-xsdo.vercel.app/]<br>
+
 I have hosted it in Netlify also <br>
 This is a [Live Link](https://ttt-profile-harsh.netlify.app/) project. <br>
 
